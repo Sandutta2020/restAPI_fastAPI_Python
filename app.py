@@ -14,7 +14,7 @@ df =pd.read_csv('employee.csv')
 @app.get('/')
 def employee_list():
     return df.to_dict('split')
-@app.get('/students_filtered')
+@app.get('/employee_filtered')
 def user_list(minsal: Optional[int] = None, maxsal: Optional[int] = None):
 
     if minsal and maxsal:
