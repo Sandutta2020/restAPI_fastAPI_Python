@@ -3,7 +3,7 @@ import json
 res = requests.get('http://localhost:8000')
 print(res.text)
 
-res = requests.get('http://localhost:8000/students_filtered?minsal=1000&maxsal=1200')
+res = requests.get('http://localhost:8000/employee_filtered?minsal=1000&maxsal=1200')
 print(res.text)
 
 
